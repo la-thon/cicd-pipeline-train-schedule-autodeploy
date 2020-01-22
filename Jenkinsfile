@@ -38,7 +38,7 @@ pipeline {
                 }
             }
         }
-        stage('CanaryDeploy') {
+/*        stage('CanaryDeploy') {
             when {
                 branch 'master'
             }
@@ -51,7 +51,7 @@ pipeline {
                     configs: 'train-schedule-kube-canary.yml',
                     enableConfigSubstitution: true
                 )
-            }
+*/            }
         }
         stage('DeployToProduction') {
             when {
